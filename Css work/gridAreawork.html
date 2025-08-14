@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-areas:
+          "header  header  header"
+          "sidebar content1 content1 "
+          "sidebar content2 content3"
+          "footer  footer  footer";
+       grid-template-rows: 1fr 2fr 1fr;
+        grid-template-columns: 1fr 1fr 2fr;
+
+        gap: 10px;
+        max-width: 1000px;
+        margin: auto;
+        background-color: #222;
+        height: 100vh;
+
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      .header {
+        grid-area: header;
+        background-color: blueviolet;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-weight: bold;
+      }
+
+      .sidebar {
+        grid-area: sidebar;
+        background-color: aqua;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .content1 {
+        grid-area: content1;
+        background-image: linear-gradient(blue, rgb(178, 8, 230));
+        color: white;
+        padding: 20px;
+        text-align: center;
+        max-width: 1000px;
+        max-height: 2000px;
+        font-weight: bold;
+      }
+
+      .content2 {
+        grid-area: content2;
+        background-image: linear-gradient(blue, rgb(178, 8, 230));
+        color: white;
+        padding: 20px;
+        text-align: center;
+        max-width: 200px;
+        max-height: 200px;
+        font-weight: bold;
+      }
+
+      .content3 {
+        grid-area: content3;
+        background-image: linear-gradient(blue, rgb(178, 8, 230));
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-weight: bold;
+      }
+
+      .footer {
+        grid-area: footer;
+        background-color: blueviolet;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">header</header>
+      <aside class="sidebar">sidebar</aside>
+      <section class="content1">Content-1</section>
+      <section class="content2">Content-2</section>
+      <section class="content3">Content-3</section>
+      <footer class="footer">footer</footer>
+    </div>
+  </body>
+</html>
