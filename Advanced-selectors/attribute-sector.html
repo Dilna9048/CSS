@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        input[required]{
+            border: 2px solid blue;
+        }
+        input[type="email"]{
+            background-color: aqua;
+        }
+        div[class~="highlght"]{
+            background-color: yellow;
+            
+            
+        }
+         p[lang|="en"]{   /*extract or start with*/ 
+        
+            color: rgb(233, 217, 1);
+        }
+        a[href^="https"]{
+            color:green;
+            
+        }
+        a[href$="login"]{
+            color: blueviolet;
+        }
+       img[src$=".jpg"]{
+        border: 2px dashed rgb(248, 13, 150);
+        width: 120px;
+        
+       }
+       a[href*="about"]{
+        font-weight: bold;
+        text-decoration: underline;
+        background-color: antiquewhite;
+
+       }
+
+
+    </style>
+</head>
+<body>
+   <h2>Css attribute selector</h2>
+   <!-- 1 -->
+    <input type="text" placeholder="your name" required><br><br>
+    <!-- 2 -->
+     <input type="email" placeholder="your email"><br><br>
+     <!-- 3 -->
+      <div class="box highlght">hihlighted</div><br>
+
+      <!-- 4 -->
+
+      <p lang="en">English Paragraph</p>
+      <p lang="en-us">us english paragraph</p>
+      <!-- 5 -->
+       <a href="https://example.com/login">Login page</a><br><br>
+       <!-- 6 -->
+        <img src="./image/sample pic.jpg" alt=""><br><br>
+        <!-- 7 -->
+         <a href="https://example.com/about">About page</a><br><br>
+         
+
+
+
+      
+</body>
+</html>
