@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Float and Clear</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eee;
+      text-align: center;
+    }
+
+    h2 {
+      margin: 20px 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .box {
+      width: 300px;
+      border: 2px solid #000;
+      background: #f8f8f8;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .red-box {
+      background: red;
+      color: white;
+      padding: 10px;
+      width: 100px;
+      height: 60px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    /* Floating red box */
+    .float-left {
+      float: left;
+      margin-right: 10px;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>CSS FLOAT and CLEAR</h2>
+
+  <div class="container">
+    <!-- Non floating -->
+    <div class="box">
+      <div class="red-box">Non floating</div>
+      <p>
+        Se de amet nulla nulla aut tempor se magna nostrud non expetendis culpa cernantur deserunt,
+        legam ut nescius ab veniam. Cernantur ab culpa de labore domestic arum probant dolor
+        excepteur aut commodo noster labore.
+      </p>
+    </div>
+
+    <!-- Left floating -->
+    <div class="box">
+      <div class="red-box float-left">Left floating</div>
+      <p>
+        Se de amet nulla nulla aut tempor se magna nostrud non expetendis culpa cernantur deserunt,
+        legam ut nescius ab veniam. Cernantur ab culpa de labore domestic arum probant dolor
+        excepteur aut commodo noster labore an fugiat se senserit ad culpa pariatur.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
